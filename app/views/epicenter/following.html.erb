@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-md-3">
+    <div class="row">
+      <div class="col-md-3">
+        <%= image_tag @user.avatar.url, class: "user-pic-stats img-rounded" %>
+      </div>
+      <div class="col-md-9">
+        <h3><%= @user.name %></h3>
+        <p>@<%= @user.username %></p>
+      </div>
+    </div>
+    <p><%= @user.bio %></p>
+    <p><i class="fa fa-map-marker"></i> <%= @user.location %></p>
+    <p><i class="fa fa-calendar"></i> Joined <%= @user.created_at.strftime("%B %Y") %></p>
+  </div>
+  <div class="col-md-8 col-md-offset-1">
+    <%= render 'user_list' %>
+  </div>
+</div>
