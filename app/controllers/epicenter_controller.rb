@@ -42,9 +42,8 @@ class EpicenterController < ApplicationController
 
     redirect_to show_user_path(id: params[:id])
   end
-end
 
-def following
+  def following
     @user = User.find(params[:id])
     @users = []
 
@@ -69,4 +68,5 @@ def following
   def all_users
     @users = User.all
   end
+  
 end

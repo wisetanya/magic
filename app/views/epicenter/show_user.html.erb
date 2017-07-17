@@ -1,5 +1,8 @@
 <h1>@<%= @user.username %>'s Profile & Tweets</h1>
-<p><%= image_tag @user.avatar.url, size:95, id: "user-pic-nav" %></p>
+<p><% if @user.avatar.url != nil %>
+<%= image_tag @user.avatar.url, size:95, id: "user-pic-nav" unless @user.avatar.blank? %>
+  <% end %>
+</p>
 <p><%= @user.name %></p>
 <p><%= @user.location %></p>
 <p><%= @user.bio %></p>
