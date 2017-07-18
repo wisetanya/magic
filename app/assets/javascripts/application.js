@@ -11,19 +11,19 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= require turbolinks
 //= require_tree .
 //= require jquery
 //= require bootstrap-sprockets
 
-$(document).ready(function(){
-  $('#unfollow_btn').hover(function(){
-    $(this).removeClass('btn-primary');
-    $(this).addClass('btn-danger');
-    $(this).html("Unfollow");
-  }, function(){
-    $(this).html("Following");
-    $(this).removeClass('btn-danger');
-    $(this).addClass('btn-primary');
-  });
-})
+$(function(){
+    $(document).on('mouseenter', '#unfollow_btn', function () {
+      $(this).removeClass('btn-primary');
+      $(this).addClass('btn-danger');
+      $(this).html("Unfollow");
+    });
+    $(document).on("mouseleave", '#unfollow_btn', function() {
+      $(this).html("Following");
+      $(this).removeClass('btn-danger');
+      $(this).addClass('btn-primary');
+     });
+  })();
