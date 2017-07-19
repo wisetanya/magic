@@ -1,0 +1,113 @@
+/*
+ /*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+ @import "font-awesome";
+
+body {
+  background: url(<%= asset_path "UNIQUE.png" %>) no-repeat;
+  background-size: cover;
+  }
+
+.bg {
+  background:rgba(211,211,211,0.6);
+}
+
+
+/*** Navbar styling ***/
+.navbar-default .navbar-brand  {
+  font-family: 'Marck Script', cursive;
+  font-size: 30px;
+  color: rgb(29,161,242);
+}
+
+.navbar-default {
+    background-color: #EBEBEB;
+    border-color: rgb(29,161,242);
+    border-radius: 10px;
+    margin: 0px 5px 0px 5px;
+}
+
+#nav-font {
+  padding-top: 20px;
+  font-size: 18px;
+  color: rebeccapurple;
+}
+
+
+/*** Images ***/
+.pic-user-stats {
+  height: 72px;
+  width: 72px;
+  border-radius: 35%;
+}
+
+.pic-user-sm {
+  height: 50px;
+  width: 50px;
+  border-radius: 35%;
+}
+
+#pic-user-nav {
+  size: 35px;
+  border-radius: 50%;
+}
+
+
+/*** Miscellaneous (alphabetical order) ***/
+.center-it {
+  text-align: center;
+}
+
+#handle {
+  font-size: 18px;
+  color: rgb(29,161,242);
+}
+
+#link {
+  padding-top: 25px;
+  font-size: 20px;
+}
+
+.mtop-10 {
+  margin-top: 10px;
+}
+
+.pad-bot-25 {
+  padding-bottom: 25px;
+}
+
+#pad-top-19 {
+  padding-top: 19px;
+}
+
+#pad-top-27 {
+  padding-top: 27px;
+}
+
+.pad-top-125 {
+  padding-top: 125px;
+}
+
+.pull-right {
+  text-align: right;
+}
+
+.user-list-wells {
+  height: 300px;
+}
