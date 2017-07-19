@@ -17,9 +17,19 @@
 @import "bootstrap";
 @import "font-awesome";
 
- /* Navbar styling */
+body {
+  background: url <%= asset_path "UNIQUE.png" %> no-repeat;
+  background-size: cover;
+  }
+
+.bg {
+  background:rgba(211,211,211,0.6);
+}
+
+
+/*** Navbar styling ***/
 .navbar-default .navbar-brand  {
-  font-family: 'Coffee House', cursive;
+  font-family: 'Marck Script', cursive;
   font-size: 30px;
   color: rgb(29,161,242);
 }
@@ -37,44 +47,65 @@
   color: rebeccapurple;
 }
 
-.user-pic-stats {
+
+/*** Images ***/
+.pic-user-stats {
   height: 72px;
   width: 72px;
-}
-
-.user-pic-nav {
-  height: 20px;
-  width: 20px;
-}
-
-.user-pic-md {
-  height: 100px;
-  width: 100px;
   border-radius: 35%;
 }
 
-.user-list-wells {
-  height: 300px;
+.pic-user-sm {
+  height: 50px;
+  width: 50px;
+  border-radius: 35%;
 }
 
-.gray-text {
-  color: gray;
+#pic-user-nav {
+  size: 35px;
+  border-radius: 50%;
+}
+
+
+/*** Miscellaneous (alphabetical order) ***/
+.center-it {
+  text-align: center;
+}
+
+#handle {
+  font-size: 18px;
+  color: rgb(29,161,242);
+}
+
+#link {
+  padding-top: 25px;
+  font-size: 20px;
 }
 
 .mtop-10 {
   margin-top: 10px;
 }
 
-.center-it {
-  text-align: center;
+.pad-bot-25 {
+  padding-bottom: 25px;
 }
 
-.rel-pos {
-  position: relative;
+#pad-top-19 {
+  padding-top: 19px;
 }
 
-.bottom {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+#pad-top-27 {
+  padding-top: 27px;
+}
+
+.pad-top-125 {
+  padding-top: 125px;
+}
+
+.pull-right {
+  text-align: right;
+}
+
+.user-list-wells {
+  height: 300px;
 }
