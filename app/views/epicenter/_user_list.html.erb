@@ -5,8 +5,8 @@
         <div class="row">
           <div class="col-md-6">
             <% if user.avatar.url != nil %>
-            <%= image_tag user.avatar.url, class: "user-pic-md" %>
-            <% end %>
+              <%= image_tag user.avatar.url, class: "pic-user-stats" %>
+            <% end %>  
           </div>
           <div class="col-md-6">
             <p>
@@ -25,11 +25,10 @@
             <h3><%= user.name %></h3>
             <p>@<%= user.username %></p>
           <% end %>
-          <p>
-            <%= user.bio %>
-          </p>
+          <em><%= user.location%></em>
+          <p><%= user.bio %></p>
         </div>
       </div>
     </div>
   <% end %>
-</div>
+</div
